@@ -60,7 +60,17 @@ class RadioSettings {
   });
 
   // Regional preset configurations
-  static final List<(String, RadioSettings)> presets = [
+  static final List<(String, RadioSettings)> presets = [ 
+    (
+      'Poland South 868',
+      RadioSettings(
+        frequencyMHz: 869.618,
+        bandwidth: LoRaBandwidth.bw62_5,
+        spreadingFactor: LoRaSpreadingFactor.sf6,
+        codingRate: LoRaCodingRate.cr4_5,
+        txPowerDbm: 22,
+      ),
+    ),
     (
       'Australia',
       RadioSettings(
